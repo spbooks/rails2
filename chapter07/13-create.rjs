@@ -1,0 +1,2 @@
+page.replace_html 'vote_score', "Score: #{@story.votes.size}"
+page[:vote_score].visual_effect :highlight

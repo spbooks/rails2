@@ -1,0 +1,10 @@
+patrick:
+  login: patrick
+  password: sekrit
+  name: Patrick Lenz
+  email: patrick@limited-overload.de
+john:
+  login: john
+  password: gh752px
+  name: John Doe
+  email: john@doe.com

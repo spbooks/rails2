@@ -1,0 +1,35 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+    xml:lang="en" lang="en">
+  <head>
+    <meta http-equiv="Content-type" 
+        content="text/html; charset=utf-8" />
+    <title>Shovell</title>
+    <%= javascript_include_tag :defaults %>
+    <%= stylesheet_link_tag 'style' %>
+  </head>
+  <body>
+    <div id="content">
+      <div id="login_logout">
+        <% if @current_user %>
+          Logged in as:
+          <%= @current_user.login %>
+          <em><%= link_to "(Logout)", session_path, :method => :delete %></em>
+        <% else %>
+          <em>Not logged in.</em>
+          <%= link_to 'Login', new_session_path %>
+        <% end %>
+      </div>
+      <h1>Shovell</h1>
+      <% unless flash[:notice].blank? %>
+    	<div id="notification"><%= flash[:notice] %></div>
+    	<% end %>
+      <%= yield %>
+    </div>
+    <ul id="navigation">
+      <li><%= link_to 'Front page stories', stories_path %></li>
+      <li><%= link_to 'Submit a new story!', new_story_path %></li>
+    </ul>
+  </body>
+</html>

@@ -1,0 +1,22 @@
+<%= error_messages_for 'story' %>
+<% form_for @story do |f| %>
+<p>
+  name:<br />
+  <%= f.text_field :name %>
+</p>
+<p>
+  link:<br />
+  <%= f.text_field :link %>
+</p>
+<p>
+  description:<br />
+  <%= f.text_area :description %>
+</p>
+<p>
+  tags:<br />
+  <%= f.text_field :tag_list %>
+</p>
+<p>
+  <%= submit_tag %>
+</p>
+<% end %>

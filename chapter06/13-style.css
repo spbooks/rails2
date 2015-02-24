@@ -1,0 +1,22 @@
+body {
+  background-color: #666;
+  margin: 15px 25px;
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+#content {
+  background-color: #fff;
+  border: 10px solid #ccc;
+  padding: 10px 10px 20px 10px;
+}
+
+#notification {
+  border: 5px solid #9c9;
+  background-color: #cfc;
+  padding: 5px;
+  margin: 10px 0;
+}
+
+.fieldWithErrors {
+  border: 5px solid #f66;
+}

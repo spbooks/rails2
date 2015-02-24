@@ -1,0 +1,19 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  name: My shiny weblog
+  link: http://poocs.net/
+  user: patrick
+  votes_count: 2
+  
+two:
+  name: SitePoint Forums
+  link: http://www.sitepoint.com/forums/
+  user: patrick
+  votes_count: 0
+  
+promoted:
+  name: What is a Debugger?
+  link: http://en.wikipedia.org/wiki/Debugger/
+  user: john
+  votes_count: 5
